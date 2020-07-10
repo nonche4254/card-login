@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>animation</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      header {
+        margin-bottom: 20px;
+      }
+
+      #item {
+        background: red;
+        opacity: 0.7;
+        width: 100px;
+        height: 100px;
+        position: relative;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <input type="button" value="fadeOut" id="fadeOut" />
+      <input type="button" value="fadein" id="fadein" />
+      <input type="button" value="slideUp" id="slideUp" />
+      <input type="button" value="slideDown" id="slideDown" />
+      <hr />
+      <input type="button" value="move-right" id="moveright" />
+      <input type="button" value="move-left" id="moveleft" />
+      <input type="button" value="move-return" id="movereturn" />
+      <hr />
+      <input type="button" value="none" id="none" />
+      <hr />
+      <input type="button" id="animation" value="animation" />
+    </header>
+    <div class="box">
+      <div id="item"></div>
+    </div>
+    <script src="js/animation.js"></script>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+@font-face {
+  font-family: "Maplestory\ Light";
+  src: url("../font/Maplestory\ Light.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Maplestory\ Light";
+}
+
+body {
+  background-color: #333;
+  color: #fff;
+}
+
+p {
+  font-size: 15px;
+  color: lightgray;
+  opacity: 0.9;
+  text-shadow: 2px 2px #333;
+}
+
+h2 {
+  font-size: 2.2rem;
+}
+
+h2 span {
+  font-size: 20px;
+}
+
+.warp {
+  padding: 50px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+}
+
+.warp > div {
+  height: 230px;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0.9;
+  transition: all 0.3s ease-in-out;
+}
+
+.warp > div:hover {
+  transform: scale(0.9);
+}
+
+.warp > div:nth-child(1) {
+  grid-column: 1;
+}
+
+.warp > div:nth-child(1) {
+  grid-column: 1/3;
+}
+
+img {
+  width: 60%;
+}
+
+.bg1 {
+  background: url("../image/bg01.jpg");
+  /* background: linear-gradient(to left, #c06c84, #6c5b7b, #355c7d); */
+}
+.bg2 {
+  background: url("../image/bg02.jpg");
+}
